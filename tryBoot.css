@@ -1,0 +1,45 @@
+.container-fluid
+{
+    min-width: 100%;
+}
+#header
+{
+    margin: 10px 0 0 40px;
+    width: 100%;
+
+
+}
+/* bootstrap dropdown hover menu*/
+
+nav
+{
+    margin-top: 10px;
+}
+.nav .open>a:hover,.nav .open>a:focus
+{
+    background: white;
+}
+.nav>li>a:hover,.nav>li>a:focus
+{
+    background-color: #fff;
+    text-decoration: none;
+}
+.dropdown-menu
+{
+    box-shadow: none;
+    font-size: 12px;
+}
+.nav > li:hover .dropdown-menu
+{
+    display: block;
+
+}
+
+/* ---------------------- Blueslate nav ---------------------- */
+.blue{ text-align: justify;}
+.blue #slatenav{position:relative;display:block;height:42px;font-size:11px;font-weight:bold;background:transparent url(blueslate_background.gif) repeat-x top left;font-family:Arial,Verdana,Helvitica,sans-serif;text-transform:uppercase;}
+.blue #slatenav ul{margin:0px 0px 0px 100px;padding:0;list-style-type:none;width:auto;}
+.blue #slatenav ul li{display:block;float:left;margin:0 1px 0 0;}
+.blue #slatenav ul li a{display:block;float:left;color:#D5F1FF;text-decoration:none;padding:14px 22px 0 22px;height:43px;}
+.blue #slatenav ul li a:hover,.blue #slatenav ul li a.current{color:#fff;background:transparent url(blueslate_backgroundOVER.gif) no-repeat top center ;}
+/* ---------------------- END Blueslate nav ---------------------- */
