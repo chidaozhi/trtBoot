@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="../import/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../import/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="tryBoot.css">
+    <link rel="stylesheet" href="css/menu.css">
     <script type="javascript" src="../import/less.js-2.7.2/dist/less.js"></script>
     <script src="../import/jquery-3.1.1.min.js"></script>
     <script src="../import/dist/js/bootstrap.min.js"></script>
+
 
     <title>Title</title>
 </head>
@@ -74,43 +76,101 @@
             </div>
         </div>
     </div>
+    <div class="rz_bw_nav001_m">
+        <div class="nav down-nav">
+            <div class="nav_main">
+                <ul id="nav_all">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于我们</a>
+                        <ul class="down-menu" style="display: none;">
+                            <li style="width: 8px;"></li>
+                            <li><a href="#">公司简介</a></li>
+                            <li><a href="#">企业文化</a></li>
+                            <li><a href="#">荣誉资质</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">服务项目</a>
+                        <ul class="down-menu" style="display: none;">
+                            <li style="width: 28px;"></li>
+                            <li><a href="#">网站建设</a></li>
+                            <li><a href="#">微信开发</a></li>
+                            <li><a href="#">电商商务</a></li>
+                            <li><a href="#">安卓开发</a></li>
+                            <li><a href="#">苹果开发</a></li>
+                            <li><a href="#">动画制作</a></li>
+                            <li><a href="#">艺术设计</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                        <div style="_margin-top: 12px;"></div>合作案例</a>
+                        <ul class="down-menu" style="display: none;">
+                            <li style="width: 52px;"></li>
+                            <li><a href="#">网站建设</a></li>
+                            <li><a href="#">微信开发</a></li>
+                            <li><a href="#">电商商务</a></li>
+                            <li><a href="#">安卓开发</a></li>
+                            <li><a href="#">苹果开发</a></li>
+                            <li><a href="#">动画制作</a></li>
+                            <li><a href="#">艺术设计</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">新闻资讯</a>
+                        <ul class="down-menu" style="display: none;">
+                            <li style="width: 340px;"></li>
+                            <li><a href="#">公司动态</a></li>
+                            <li><a href="#">行业新闻</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">信息收集</a>
+                        <ul class="down-menu" style="display: none;">
+                            <li style="width: 398px;"></li>
+                            <li><a href="#">设计欣赏</a></li>
+                            <li><a href="#">资源共享</a></li>
+                            <li><a href="#">百家杂谈</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">养生堂</a>
+                        <ul class="down-menu" style="display: none;">
+                            <li style="width: 260px;"></li>
+                            <li><a href="#">开心一刻</a></li>
+                            <li><a href="#">美食餐饮</a></li>
+                            <li><a href="#">世界之醉</a></li>
+                            <li><a href="#">科技之炫</a></li>
+                            <li><a href="#">植物之美</a></li>
+                            <li><a href="#">世界之美</a></li>
+                            <li><a href="#">玩物把件</a></li>
+                            <li><a href="#">养生保健</a></li>
+                            <li><a href="#">心灵鸡汤</a></li>
+                        </ul>
+                    </li>
+                </ul>
 
-
-    <div class="blue row">
-        <div id="slatenav">
-            <ul>
-                <li><a href="" title="css menus" class="current">Home</a></li>
-                <li><a href="http://www.lanrentuku.com/" title="css menus">About Us</a></li>
-                <li><a href="http://www.lanrentuku.com/" title="css menus">Services</a></li>
-                <li><a href="http://www.lanrentuku.com/" title="css menus">Our Work</a></li>
-                <li><a href="http://www.lanrentuku.com/" title="css menus">Contact Us</a></li>
-            </ul>
+            </div>
         </div>
     </div>
 
 
+
+
+
+
+
+</div>
+
+
         </div>
         <script type="javascript">
-            //$(document).ready(function(){
-            //
-            //});
-            //    $(function(){
-            //
-            //    });
-            //        $('ul.nav li.dropdown').hover(function() {
-            //            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
-            //        }, function() {
-            //            $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
-            //        });\
-
             $(document).off('click.bs.dropdown.data-api');
-
             $('ul.nav li.dropdown').mousedover(function(){
-                $(this).find('.dropdown-menu').stop(true,false).delay(200).fadein(500);
-            },function() {
-                $(this).find('.dropdown-menu').stop(true,false).delay(200).fadeout(500);
+                $(this).find('.dropdown-menu').stop(true,false).delay(200).fadeToggle(500);
             });
-
         </script>
+        <script type="javascript">
+            var st = 180;
+            $('#nav_all>li').mousedover(function () {
+                $(this).find('ul').stop(false, true).slideDown(st);
+            });
+        </script>
+
 </body>
 </html>
